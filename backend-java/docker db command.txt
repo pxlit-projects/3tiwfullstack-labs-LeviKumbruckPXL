@@ -1,0 +1,1 @@
+docker run --name mysql-employeeservice -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_DATABASE=employeeservice_db -p 3306:3306 -d mysql:8.0

@@ -45,11 +45,11 @@ public class DepartmentService implements IDepartmentService {
         return departments.stream().map(this::mapToDepartmentResponse).toList();
     }
 
-    @Override
-    public List<DepartmentResponse> findByOrganizationWithEmployees(Long organizationId) {
-        List<Department> departments = departmentRepository.findByOrganizationIdWithEmployees(organizationId);
-        return departments.stream().map(this::mapToDepartmentResponse).toList();
-    }
+    //@Override
+    //public List<DepartmentResponse> findByOrganizationWithEmployees(Long organizationId) {
+        //List<Department> departments = departmentRepository.findByOrganizationIdWithEmployees(organizationId);
+        //return departments.stream().map(this::mapToDepartmentResponse).toList();
+    //}
 
     private DepartmentResponse mapToDepartmentResponse(Department department) {
         return DepartmentResponse.builder()

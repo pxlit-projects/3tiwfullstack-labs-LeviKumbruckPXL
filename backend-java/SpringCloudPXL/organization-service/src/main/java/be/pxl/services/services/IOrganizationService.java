@@ -7,11 +7,11 @@ import java.util.List;
 
 public interface IOrganizationService {
 
-    OrganizationResponse findById(Long id);
-
-    OrganizationResponse findByIdWithDepartments(Long id);
-
-    OrganizationResponse findByIdWithDepartmentsAndEmployees(Long id);
-
-    OrganizationResponse findByIdWithEmployees(Long id);
+//    OrganizationResponse findById(Long id);
+//
+//    OrganizationResponse findByIdWithDepartments(Long id);
+//
+//    OrganizationResponse findByIdWithDepartmentsAndEmployees(Long id);
+//
+//    OrganizationResponse findByIdWithEmployees(Long id);
 }

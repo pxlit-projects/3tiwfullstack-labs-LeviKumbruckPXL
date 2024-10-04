@@ -23,9 +23,9 @@ public class Organization {
     private String name;
     private String address;
 
-    @OneToMany
+    @Transient
     private List<Employee> employees;
 
-    @OneToMany
+    @Transient
     private List<Department> departments;
 }

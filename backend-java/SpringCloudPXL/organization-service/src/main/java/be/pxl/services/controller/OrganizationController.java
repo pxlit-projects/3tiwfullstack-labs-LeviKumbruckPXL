@@ -14,23 +14,23 @@ public class OrganizationController {
 
     private final IOrganizationService organizationService;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<OrganizationResponse> findById(@PathVariable Long id) {
-        return new ResponseEntity<>(organizationService.findById(id), HttpStatus.OK);
-    }
-
-    @GetMapping("/{id}/with-departments")
-    public ResponseEntity<OrganizationResponse> findByIdWithDepartments(@PathVariable Long id) {
-        return new ResponseEntity<>(organizationService.findByIdWithDepartments(id), HttpStatus.OK);
-    }
-
-    @GetMapping("/{id}/with-departments-and-employees")
-    public ResponseEntity<OrganizationResponse> findByIdWithDepartmentsAndEmployees(@PathVariable Long id) {
-        return new ResponseEntity<>(organizationService.findByIdWithDepartmentsAndEmployees(id), HttpStatus.OK);
-    }
-
-    @GetMapping("/{id}/with-employees")
-    public ResponseEntity<OrganizationResponse> findByIdWithEmployees(@PathVariable Long id) {
-        return new ResponseEntity<>(organizationService.findByIdWithEmployees(id), HttpStatus.OK);
-    }
+//    @GetMapping("/{id}")
+//    public ResponseEntity<OrganizationResponse> findById(@PathVariable Long id) {
+//        return new ResponseEntity<>(organizationService.findById(id), HttpStatus.OK);
+//    }
+//
+//    @GetMapping("/{id}/with-departments")
+//    public ResponseEntity<OrganizationResponse> findByIdWithDepartments(@PathVariable Long id) {
+//        return new ResponseEntity<>(organizationService.findByIdWithDepartments(id), HttpStatus.OK);
+//    }
+//
+//    @GetMapping("/{id}/with-departments-and-employees")
+//    public ResponseEntity<OrganizationResponse> findByIdWithDepartmentsAndEmployees(@PathVariable Long id) {
+//        return new ResponseEntity<>(organizationService.findByIdWithDepartmentsAndEmployees(id), HttpStatus.OK);
+//    }
+//
+//    @GetMapping("/{id}/with-employees")
+//    public ResponseEntity<OrganizationResponse> findByIdWithEmployees(@PathVariable Long id) {
+//        return new ResponseEntity<>(organizationService.findByIdWithEmployees(id), HttpStatus.OK);
+//    }
 }

@@ -24,27 +24,27 @@ public class OrganizationService implements IOrganizationService {
                 .build();
     }
 
-    @Override
-    public OrganizationResponse findById(Long id) {
-        Optional<Organization> organization = organizationRepository.findById(id);
-        return organization.map(this::mapToOrganizationResponse).orElse(null);
-    }
+//    @Override
+//    public OrganizationResponse findById(Long id) {
+//        Optional<Organization> organization = organizationRepository.findById(id);
+//        return organization.map(this::mapToOrganizationResponse).orElse(null);
+//    }
 
-    @Override
-    public OrganizationResponse findByIdWithDepartments(Long id) {
-        Optional<Organization> organization = organizationRepository.findByIdWithDepartments(id);
-        return organization.map(this::mapToOrganizationResponse).orElse(null);
-    }
-
-    @Override
-    public OrganizationResponse findByIdWithDepartmentsAndEmployees(Long id) {
-        Optional<Organization> organization = organizationRepository.findByIdWithDepartmentsAndEmployees(id);
-        return organization.map(this::mapToOrganizationResponse).orElse(null);
-    }
-
-    @Override
-    public OrganizationResponse findByIdWithEmployees(Long id) {
-        Optional<Organization> organization = organizationRepository.findByIdWithEmployees(id);
-        return organization.map(this::mapToOrganizationResponse).orElse(null);
-    }
+//    @Override
+//    public OrganizationResponse findByIdWithDepartments(Long id) {
+//        Optional<Organization> organization = organizationRepository.findByIdWithDepartments(id);
+//        return organization.map(this::mapToOrganizationResponse).orElse(null);
+//    }
+//
+//    @Override
+//    public OrganizationResponse findByIdWithDepartmentsAndEmployees(Long id) {
+//        Optional<Organization> organization = organizationRepository.findByIdWithDepartmentsAndEmployees(id);
+//        return organization.map(this::mapToOrganizationResponse).orElse(null);
+//    }
+//
+//    @Override
+//    public OrganizationResponse findByIdWithEmployees(Long id) {
+//        Optional<Organization> organization = organizationRepository.findByIdWithEmployees(id);
+//        return organization.map(this::mapToOrganizationResponse).orElse(null);
+//    }
 }
